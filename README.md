@@ -15,7 +15,7 @@ El `src` del script de Google Maps inlcuye tanto la API KEY como el callback par
 ````html
 <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&callback=CALLBACK_FUNCTION"></script>
 ````
-Un mapa requiere de un zoom y una localización (`center`) para visulizarse:
+Un mapa requiere `zoom` y una localización (`center`) para renderizarse:
 ````javascript
 const options = {center: coordinates, zoom: 15}
 const mapInstance = new google.maps.Map(document.querySelector('#myMap'), options)
